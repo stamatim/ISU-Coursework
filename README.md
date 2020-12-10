@@ -3,7 +3,7 @@ A collection of various assignments and other work from my time as a student at 
 
 ## Relevant Coursework
 
-Here is a list of courses that I took that I found to be directly relevant to the field of Software Engineering:
+Here is a list of courses that I took that I found to be directly relevant to the field of Software Engineering. Each course lasted about 4-5 months.
 
 * COM S 227 
 * COM S 228
