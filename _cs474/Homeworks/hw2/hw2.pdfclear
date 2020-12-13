@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hw2</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="com-s-474-homework-2">COM S 474 Homework 2</h1>
+<p>By: Stamati Morellas Date: 9/28/2020</p>
+<h2 id="problem-1">Problem 1</h2>
+<p>The augmented feature vector is <span class="math inline"><em>x</em> = [1.1, 2.2, 3.3, 1]<sup><em>T</em></sup></span></p>
+<h2 id="problem-2">Problem 2</h2>
+<p>The class of the sample is <span class="math inline"> + 1</span></p>
+<h2 id="problem-3">Problem 3</h2>
+<p>Start with the regular loss function <span class="math inline"><strong>J</strong><strong>(</strong><strong>W</strong><strong>)</strong></span>, then multiply <span class="math inline"><em>y</em><sub><em>i</em></sub><sup>2</sup></span> which will always have a value of <span class="math inline">1</span> regardless of the class label</p>
+<p><span class="math display">$$J(\mathbf{W}) = \sum_{i=1}^N (\mathbf{W}^T\mathbf{x}_i'' -1)^2 $$</span></p>
+<h2 id="problem-4">Problem 4</h2>
+<p>The equation for the new loss function is <span class="math inline"><strong>W</strong> = (<em>X</em>″<em>X</em>″<sup><em>T</em></sup>)<sup> − 1</sup><em>X</em>″</span></p>
+<h2 id="problem-5">Problem 5</h2>
+<p><em>Redacted</em></p>
+</body>
+</html>
