@@ -1,7 +1,7 @@
 # My Coursework Directory
 A collection of various assignments and other resources from my time as a student at Iowa State University. All compiled into one repository.
 
-## Relevant Coursework
+## Relevant Coursework Catalogue
 
 Here is a list of courses that I took that I found to be directly relevant to the field of Software Engineering. Each course lasted about 4-5 months. Use this as a reference when navigating the folders in the repository. 
 
