@@ -1,0 +1,129 @@
+/*
+NAME: Stamatios Morellas (morellas@iastate.edu)
+ASSIGNMENT: Project 3 - XQuery & OOXQuery
+PROFESSOR: Gadia
+DATE OF SUBMISSION: 4/1/19
+*/
+
+
+/* Part 1: XQuery */
+
+
+// ITEM 1: List Names of students and their mentors;
+<showtext>
+$Saxon:>
+<ITEM1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $student in doc("dataset1/Student.xml")/Students/Student
+    for $instructor in doc("dataset1/Instructor.xml")/Instructors/Instructor
+    let $studentname := doc("dataset1/Person.xml")/Persons/Person[ID = $student/StudentID]/Name
+    let $instructorname := doc("dataset1/Person.xml")/Persons/Person[ID = $instructor/InstructorID]/Name
+    where $student/MentorID = $instructor/InstructorID
+    return <E><Student>{ $studentname }</Student><Instructor>{ $instructorname }</Instructor></E>
+} </ITEM1>;
+</showtext>
+
+// ITEM 2: For each classification, list the classification and the average GPA of students with that classification;
+// Your query should not use any constants, such as 'Freshman';
+<showtext>
+$Saxon:>
+<ITEM2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $classification in distinct-values(doc("dataset1/Student.xml")/Students/Student/Classification)
+    let $gpa := avg(doc("dataset1/Student.xml")/Students/Student[Classification = $classification]/GPA)
+    return <E><Classification>{ $classification }</Classification><GPA>{ $gpa }</GPA></E>
+} </ITEM2>;
+</showtext>
+
+// ITEM 3: For each enrolled student, list his/her name and his/her mentor's name;
+<showtext>
+$Saxon:>
+<ITEM3 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $enrollmentid in distinct-values(doc("dataset1/Enrollment.xml")/Enrollments/Enrollment/StudentID)
+    let $student := doc("dataset1/Student.xml")/Students/Student[StudentID = $enrollmentid]
+    let $instructor := doc("dataset1/Instructor.xml")/Instructors/Instructor[InstructorID = $student/MentorID]
+    let $sid := doc("dataset1/Person.xml")/Persons/Person[ID = $student/StudentID]
+    let $mid := doc("dataset1/Person.xml")/Persons/Person[ID = $instructor/InstructorID]
+    return <E><MentorName>{ $mid/Name }</MentorName><StudentName>{ $sid/Name }</StudentName></E>
+} </ITEM3>;
+</showtext>
+
+// ITEM 4: List the Names of students who have at least one A in courses they are enrolled in (Do not consider A- as an A);
+<showtext>
+$Saxon:>
+<ITEM4 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $student in doc("dataset1/Student.xml")/Students/Student
+    let $sname := doc("dataset1/Person.xml")/Persons/Person[ID = $student/StudentID]/Name
+    let $sgrade := doc("dataset1/Enrollment.xml")/Enrollments/Enrollment[StudentID = $student/StudentID]/Grade
+    where $sgrade = "A"
+    return <E>{ $sname }</E>
+} </ITEM4>;
+</showtext>
+
+// ITEM 5: List the course codes of courses that are prerequisites for the course CS311;
+<showtext>
+$Saxon:>
+<ITEM5 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $course in doc("dataset1/Course.xml")/Courses/Course[PreReq = "CS311"]
+    return <E>{ $course/CourseCode }</E>
+} </ITEM5>;
+</showtext>
+
+// ITEM 6: Restructure Student.xml by classification. There should be one element per classification in which the remaining information about students should be included in one element per student;
+// (Tip: Make sure you understand Slide 12.8 titled Restructuring in XQuery);
+<showtext>
+$Saxon:>
+<ITEM6 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $classification in distinct-values(doc("dataset1/Student.xml")/Students/Student/Classification)
+    let $student := doc("dataset1/Student.xml")/Students/Student[Classification = $classification]
+    return <E><Classification>{ $classification }</Classification><StudentList>{ $student }</StudentList></E>
+} </ITEM6>;
+</showtext>
+
+
+/* Part 2: OOXQuery */
+
+
+// ITEM 7: List the Name, and Rank of faculty who have a salary of 100K or higher;
+<showtext>
+$OOXQuery:>
+<ITEM7 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $faculty in doc("dataset2/UniversityOODB(ODMG).xml")//Faculty
+    where $faculty.Salary > 100000
+    return <E>{ $faculty.Name, $faculty.Rank }</E>
+} </ITEM7>;
+</showtext>
+
+// ITEM 8: List Names of students and their mentors;
+// (Note that if $s is a student, $s.Mentor will return a faculty element);
+<showtext>
+$OOXQuery:>
+<ITEM8 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $student in doc("dataset2/UniversityOODB(ODMG).xml")//Student
+    return <E><Student>{ $student.Name }</Student><Mentor>{ $student.Mentor.Name }</Mentor></E>
+} </ITEM8>;
+</showtext>
+
+// ITEM 9: For each faculty, list his / her name, and student;
+// Name with classification and GPA of students that the faculty is mentoring;
+// For each faculty there should be only one element, the info about students should be nested inside that element;
+// (Note that if $f is a faculty, $f.Mentoring will return a list of students. >>> Tip: You can iterate over this list using the for clause.);
+<showtext>
+$OOXQuery:>
+<ITEM9> {
+    for $faculty in doc("dataset2/UniversityOODB(ODMG).xml")//Faculty
+    for $student in doc("dataset2/UniversityOODB(ODMG).xml")//Student[Mentor/@oID = $faculty/@FacultyID]
+    return
+    <E>
+        <Mentor>{ $faculty.Name }</Mentor>
+        <Mentoring>{ $student.Name, $student.Classification, $student.GPA }</Mentoring>
+    </E>
+} </ITEM9>;
+</showtext>
+
+// ITEM 10: For every offering, list course name, section, and instructor name;
+<showtext>
+$OOXQuery:>
+<ITEM10 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> {
+    for $offering in doc("dataset2/UniversityOODB(ODMG).xml")//Offering
+    return <E>{ $offering.CourseInfo.CourseName, $offering.Section, $offering.Instructor.Name }</E>
+} </ITEM10>;
+</showtext>

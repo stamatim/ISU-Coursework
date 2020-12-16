@@ -1,0 +1,41 @@
+// NAME: STAMATIOS MORELLAS
+// COURSE: CS363 - GADIA
+// ASSIGNMENT: PROJECT 4 - NEO4J
+// DUE DATE: 4/22/2019
+
+// Item 1: List Names of students and their mentors
+MATCH (student:Person)<-[:S2P]-(s)<-[:Mentors]-(m)-[M2P]-(mentor)
+WHERE exists(student.Name) AND exists(mentor.Name)
+RETURN student.Name, mentor.Name;
+
+// Item 2: For classification "Sophomore", list the classification (Sophomore) and the average GPA of students with that classification
+MATCH (s:Student)
+WHERE s.Classification='Sophomore'
+RETURN s.Classification, AVG(s.GPA);
+
+// Item 3: For each enrolled student, list his/her name and his/her mentor's name
+MATCH (student)<-[:S2P]-(s2:Student)-[:Taking]->(enrolled)<-[:Taking]-(s1:Student)<-[:Mentors]-(m)-[:F2P]->(mentor)
+RETURN student.Name, mentor.Name;
+
+// Item 4: List the Names of students who have at least one A in courses they are enrolled in
+MATCH (student:Person)<-[:S2P]-(s:Student)-[t:Taking]->(enrollment)
+WHERE t.Grade ='A'
+RETURN DISTINCT student.Name;
+
+// Item 5: List the course codes of courses that are prerequisites for the course CS311
+MATCH (prq:Course)-[:PreReq]->(c)
+WHERE c.CourseCode='CS311'
+RETURN prq.CourseCode;
+
+// Item 6: List the Name, and Rank of faculty who have a salary of 100K or higher
+MATCH (f:Faculty)-[:F2P]->(p:Person)
+WHERE f.Salary>=100000
+RETURN p.Name, f.Rank;
+
+// Item 7: For each faculty, list his / her name, and classification and GPA of students that the faculty is mentoring
+MATCH (students:Student)<-[:Mentors]-(faculty:Faculty)-[:F2P]->(person:Person)
+RETURN person.Name, students.Classification, students.GPA;
+
+// Item 8: For every offering, list course name, section, instructors' name, and enrollment
+MATCH (enrollment)<-[:Covers]-(offering)-[t:Taking]-(student)-[:Mentors]-(mentor)-[:F2P]-(instructor)
+RETURN enrollment.CourseName, collect(DISTINCT offering.Section), collect(DISTINCT instructor.Name), collect(DISTINCT t.EnrollmentID);
