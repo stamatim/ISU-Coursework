@@ -1,0 +1,5 @@
+module seven_seg_decoder (A,B,C,D,E,F,G,x3,x2,x1,x0);
+
+	input x3,x2,x1,x0;
+
+endmodule

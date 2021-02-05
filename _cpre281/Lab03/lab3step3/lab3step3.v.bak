@@ -1,0 +1,8 @@
+module lab3step3 (A, F, C, G, W);
+
+	input F, c, G, W; // Inputs: Farmer, Cabbage, Goat, Wolf
+	output A; // Output: Alarm (on/off)
+	
+	assign A = ((~F&G&W)|(~F&C&W)|(F&~C&~G))
+
+endmodule

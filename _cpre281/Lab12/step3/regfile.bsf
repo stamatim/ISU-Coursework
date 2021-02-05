@@ -1,0 +1,113 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 280 288)
+	(text "regfile" (rect 5 0 42 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 203 24 220)(font "Intel Clear" ))
+	(port
+		(pt 0 192)
+		(input)
+		(text "LD_DATA[7..0]" (rect 0 0 88 19)(font "Intel Clear" (font_size 8)))
+		(text "LD_DATA[7..0]" (rect 21 187 109 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 171 44 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "WA0" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "WA0" (rect 21 99 49 118)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 104)(pt 16 104))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "WA1" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "WA1" (rect 21 83 49 102)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "Enable" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
+		(text "Enable" (rect 21 139 61 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "CLRN" (rect 0 0 33 19)(font "Intel Clear" (font_size 8)))
+		(text "CLRN" (rect 21 155 54 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "RQA0" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "RQA0" (rect 21 67 55 86)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "RPA0" (rect 0 0 33 19)(font "Intel Clear" (font_size 8)))
+		(text "RPA0" (rect 21 35 54 54)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "RQA1" (rect 0 0 34 19)(font "Intel Clear" (font_size 8)))
+		(text "RQA1" (rect 21 51 55 70)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "RPA1" (rect 0 0 33 19)(font "Intel Clear" (font_size 8)))
+		(text "RPA1" (rect 21 19 54 38)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "DATAQ[7..0]" (rect 0 0 74 19)(font "Intel Clear" (font_size 8)))
+		(text "DATAQ[7..0]" (rect 121 27 195 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "DATAP[7..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
+		(text "DATAP[7..0]" (rect 122 43 195 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 216 48)(pt 200 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 208))
+	)
+)

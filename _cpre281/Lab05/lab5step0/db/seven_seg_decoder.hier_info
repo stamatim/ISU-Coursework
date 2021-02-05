@@ -1,0 +1,14 @@
+|seven_seg_decoder
+A << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+
+

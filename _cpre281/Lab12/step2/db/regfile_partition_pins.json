@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DATAP[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAP[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAP[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAP[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAQ[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAQ[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAQ[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAQ[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAQ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAQ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAQ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAQ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RPA0",
+					"strict" : false
+				},
+				{
+					"name" : "RPA1",
+					"strict" : false
+				},
+				{
+					"name" : "RQA0",
+					"strict" : false
+				},
+				{
+					"name" : "RQA1",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CLRN",
+					"strict" : false
+				},
+				{
+					"name" : "WA0",
+					"strict" : false
+				},
+				{
+					"name" : "Enable",
+					"strict" : false
+				},
+				{
+					"name" : "WA1",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LD_DATA[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

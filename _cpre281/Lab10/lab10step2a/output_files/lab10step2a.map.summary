@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 06 12:24:35 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : lab10step2a
+Top-level Entity Name : lab10step2a
+Family : Cyclone IV E
+Total logic elements : 5
+    Total combinational functions : 5
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

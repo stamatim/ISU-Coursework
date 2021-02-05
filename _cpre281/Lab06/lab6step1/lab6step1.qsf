@@ -1,0 +1,91 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+# Date created = 12:00:34  October 09, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		lab6step1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY lab6step1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:00:34  OCTOBER 09, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name BDF_FILE lab6step1.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE binary_coded_decimal_converter.v
+set_global_assignment -name BSF_FILE binary_coded_decimal_converter.bsf
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_location_assignment PIN_Y23 -to N4X3
+set_location_assignment PIN_Y24 -to N4X2
+set_location_assignment PIN_AA22 -to N4X1
+set_location_assignment PIN_AA23 -to N4X0
+set_location_assignment PIN_AA24 -to N3X3
+set_location_assignment PIN_AB23 -to N3X2
+set_location_assignment PIN_AB24 -to N3X1
+set_location_assignment PIN_AC24 -to N3X0
+set_location_assignment PIN_AB28 -to Ci
+set_location_assignment PIN_AA17 -to N3A
+set_location_assignment PIN_AB16 -to N3B
+set_location_assignment PIN_AA16 -to N3C
+set_location_assignment PIN_AB17 -to N3D
+set_location_assignment PIN_AB15 -to N3E
+set_location_assignment PIN_AA15 -to N3F
+set_location_assignment PIN_AC17 -to N3G
+set_location_assignment PIN_AD17 -to N4A
+set_location_assignment PIN_AE17 -to N4B
+set_location_assignment PIN_AG17 -to N4C
+set_location_assignment PIN_AH17 -to N4D
+set_location_assignment PIN_AF17 -to N4E
+set_location_assignment PIN_AG18 -to N4F
+set_location_assignment PIN_AA14 -to N4G
+set_location_assignment PIN_AB19 -to N1A
+set_location_assignment PIN_AA19 -to N1B
+set_location_assignment PIN_AG21 -to N1C
+set_location_assignment PIN_AH21 -to N1D
+set_location_assignment PIN_AE19 -to N1E
+set_location_assignment PIN_AF19 -to N1F
+set_location_assignment PIN_AE18 -to N1G
+set_location_assignment PIN_AD18 -to N2A
+set_location_assignment PIN_AC18 -to N2B
+set_location_assignment PIN_AB18 -to N2C
+set_location_assignment PIN_AH19 -to N2D
+set_location_assignment PIN_AG19 -to N2E
+set_location_assignment PIN_AF18 -to N2F
+set_location_assignment PIN_AH18 -to N2G
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

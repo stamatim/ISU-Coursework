@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "a1",
+					"strict" : false
+				},
+				{
+					"name" : "b1",
+					"strict" : false
+				},
+				{
+					"name" : "d1",
+					"strict" : false
+				},
+				{
+					"name" : "e1",
+					"strict" : false
+				},
+				{
+					"name" : "f1",
+					"strict" : false
+				},
+				{
+					"name" : "g1",
+					"strict" : false
+				},
+				{
+					"name" : "c1",
+					"strict" : false
+				},
+				{
+					"name" : "a2",
+					"strict" : false
+				},
+				{
+					"name" : "b2",
+					"strict" : false
+				},
+				{
+					"name" : "c2",
+					"strict" : false
+				},
+				{
+					"name" : "d2",
+					"strict" : false
+				},
+				{
+					"name" : "e2",
+					"strict" : false
+				},
+				{
+					"name" : "f2",
+					"strict" : false
+				},
+				{
+					"name" : "g2",
+					"strict" : false
+				},
+				{
+					"name" : "a3",
+					"strict" : false
+				},
+				{
+					"name" : "b3",
+					"strict" : false
+				},
+				{
+					"name" : "c3",
+					"strict" : false
+				},
+				{
+					"name" : "d3",
+					"strict" : false
+				},
+				{
+					"name" : "e3",
+					"strict" : false
+				},
+				{
+					"name" : "f3",
+					"strict" : false
+				},
+				{
+					"name" : "g3",
+					"strict" : false
+				},
+				{
+					"name" : "a4",
+					"strict" : false
+				},
+				{
+					"name" : "b4",
+					"strict" : false
+				},
+				{
+					"name" : "c4",
+					"strict" : false
+				},
+				{
+					"name" : "d4",
+					"strict" : false
+				},
+				{
+					"name" : "e4",
+					"strict" : false
+				},
+				{
+					"name" : "f4",
+					"strict" : false
+				},
+				{
+					"name" : "g4",
+					"strict" : false
+				},
+				{
+					"name" : "x01",
+					"strict" : false
+				},
+				{
+					"name" : "x11",
+					"strict" : false
+				},
+				{
+					"name" : "x21",
+					"strict" : false
+				},
+				{
+					"name" : "x31",
+					"strict" : false
+				},
+				{
+					"name" : "x02",
+					"strict" : false
+				},
+				{
+					"name" : "x12",
+					"strict" : false
+				},
+				{
+					"name" : "x22",
+					"strict" : false
+				},
+				{
+					"name" : "x32",
+					"strict" : false
+				},
+				{
+					"name" : "x03",
+					"strict" : false
+				},
+				{
+					"name" : "x13",
+					"strict" : false
+				},
+				{
+					"name" : "x23",
+					"strict" : false
+				},
+				{
+					"name" : "x33",
+					"strict" : false
+				},
+				{
+					"name" : "x04",
+					"strict" : false
+				},
+				{
+					"name" : "x14",
+					"strict" : false
+				},
+				{
+					"name" : "x24",
+					"strict" : false
+				},
+				{
+					"name" : "x34",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

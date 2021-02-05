@@ -1,0 +1,26 @@
+|Negative_Edge_MSDFF
+Q <= Gated_D_Latch:inst1.Q
+D => Gated_D_Latch:inst.D
+Clk => Gated_D_Latch:inst.Clk
+Clk => inst3.IN0
+~Q <= Gated_D_Latch:inst1.~Q
+
+
+|Negative_Edge_MSDFF|Gated_D_Latch:inst1
+Q <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+Clk => inst1.IN1
+Clk => inst.IN0
+~Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Negative_Edge_MSDFF|Gated_D_Latch:inst
+Q <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+Clk => inst1.IN1
+Clk => inst.IN0
+~Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

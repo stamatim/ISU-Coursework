@@ -1,0 +1,171 @@
+|reg8b
+OUT[0] <= register:inst7.Out
+OUT[1] <= register:inst6.Out
+OUT[2] <= register:inst5.Out
+OUT[3] <= register:inst4.Out
+OUT[4] <= register:inst3.Out
+OUT[5] <= register:inst2.Out
+OUT[6] <= register:inst1.Out
+OUT[7] <= register:inst.Out
+IN[0] => register:inst7.In
+IN[1] => register:inst6.In
+IN[2] => register:inst5.In
+IN[3] => register:inst4.In
+IN[4] => register:inst3.In
+IN[5] => register:inst2.In
+IN[6] => register:inst1.In
+IN[7] => register:inst.In
+LOAD => register:inst.Load
+LOAD => register:inst1.Load
+LOAD => register:inst2.Load
+LOAD => register:inst3.Load
+LOAD => register:inst4.Load
+LOAD => register:inst5.Load
+LOAD => register:inst6.Load
+LOAD => register:inst7.Load
+CLK => register:inst.Clock
+CLK => register:inst1.Clock
+CLK => register:inst2.Clock
+CLK => register:inst3.Clock
+CLK => register:inst4.Clock
+CLK => register:inst5.Clock
+CLK => register:inst6.Clock
+CLK => register:inst7.Clock
+CLRN => register:inst.CLRN
+CLRN => register:inst1.CLRN
+CLRN => register:inst2.CLRN
+CLRN => register:inst3.CLRN
+CLRN => register:inst4.CLRN
+CLRN => register:inst5.CLRN
+CLRN => register:inst6.CLRN
+CLRN => register:inst7.CLRN
+
+
+|reg8b|register:inst
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+Clock => inst2.CLK
+In => mux2-to-1:inst1.s
+Load => mux2-to-1:inst1.x2
+
+
+|reg8b|register:inst|mux2-to-1:inst1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s => inst1.IN0
+s => inst3.IN0
+x2 => inst1.IN1
+x1 => inst.IN0
+
+
+|reg8b|register:inst1
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+Clock => inst2.CLK
+In => mux2-to-1:inst1.s
+Load => mux2-to-1:inst1.x2
+
+
+|reg8b|register:inst1|mux2-to-1:inst1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s => inst1.IN0
+s => inst3.IN0
+x2 => inst1.IN1
+x1 => inst.IN0
+
+
+|reg8b|register:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+Clock => inst2.CLK
+In => mux2-to-1:inst1.s
+Load => mux2-to-1:inst1.x2
+
+
+|reg8b|register:inst2|mux2-to-1:inst1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s => inst1.IN0
+s => inst3.IN0
+x2 => inst1.IN1
+x1 => inst.IN0
+
+
+|reg8b|register:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+Clock => inst2.CLK
+In => mux2-to-1:inst1.s
+Load => mux2-to-1:inst1.x2
+
+
+|reg8b|register:inst3|mux2-to-1:inst1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s => inst1.IN0
+s => inst3.IN0
+x2 => inst1.IN1
+x1 => inst.IN0
+
+
+|reg8b|register:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+Clock => inst2.CLK
+In => mux2-to-1:inst1.s
+Load => mux2-to-1:inst1.x2
+
+
+|reg8b|register:inst4|mux2-to-1:inst1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s => inst1.IN0
+s => inst3.IN0
+x2 => inst1.IN1
+x1 => inst.IN0
+
+
+|reg8b|register:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+Clock => inst2.CLK
+In => mux2-to-1:inst1.s
+Load => mux2-to-1:inst1.x2
+
+
+|reg8b|register:inst5|mux2-to-1:inst1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s => inst1.IN0
+s => inst3.IN0
+x2 => inst1.IN1
+x1 => inst.IN0
+
+
+|reg8b|register:inst6
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+Clock => inst2.CLK
+In => mux2-to-1:inst1.s
+Load => mux2-to-1:inst1.x2
+
+
+|reg8b|register:inst6|mux2-to-1:inst1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s => inst1.IN0
+s => inst3.IN0
+x2 => inst1.IN1
+x1 => inst.IN0
+
+
+|reg8b|register:inst7
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst2.ACLR
+Clock => inst2.CLK
+In => mux2-to-1:inst1.s
+Load => mux2-to-1:inst1.x2
+
+
+|reg8b|register:inst7|mux2-to-1:inst1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s => inst1.IN0
+s => inst3.IN0
+x2 => inst1.IN1
+x1 => inst.IN0
+
+

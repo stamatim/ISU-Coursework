@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Oct 16 12:49:21 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : lab7step2
+Top-level Entity Name : lab7step2
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 11 / 6,272 ( < 1 % )
+    Total combinational functions : 11 / 6,272 ( < 1 % )
+    Dedicated logic registers : 0 / 6,272 ( 0 % )
+Total registers : 0
+Total pins : 15 / 92 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

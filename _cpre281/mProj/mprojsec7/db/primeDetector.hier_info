@@ -1,0 +1,16 @@
+|primeDetector
+P <= P.DB_MAX_OUTPUT_PORT_TYPE
+W => P.IN0
+W => P.IN0
+X => P.IN1
+X => P.IN0
+X => P.IN0
+X => P.IN1
+Y => P.IN1
+Y => P.IN1
+Y => P.IN1
+Z => P.IN1
+Z => P.IN1
+Z => P.IN1
+
+

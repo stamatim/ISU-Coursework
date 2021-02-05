@@ -1,0 +1,21 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Smooth",
+					"strict" : false
+				},
+				{
+					"name" : "Manual",
+					"strict" : false
+				},
+				{
+					"name" : "Board",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

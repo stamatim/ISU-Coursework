@@ -1,0 +1,7 @@
+|SR_Latch_NOR
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst5.IN0
+R => inst.IN1
+~Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

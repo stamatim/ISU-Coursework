@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Nov 29 23:12:30 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : register
+Top-level Entity Name : reg8b
+Family : Cyclone IV E
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

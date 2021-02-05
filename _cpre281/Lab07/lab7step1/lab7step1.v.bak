@@ -1,0 +1,10 @@
+
+module FullAdder(Cin, X, Y, S, Cout); // verilog implementation for full adder
+	input X, Y, Cin;
+	output Cout, S;
+	
+	assign S = (X ^ Y ^ Cin) | (X && Y && Cin);
+	
+	assign Cout = (Cin && Y)|(Cin && X)|(X && Y)|(Cin && X && Y);
+
+endmodule

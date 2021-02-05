@@ -1,0 +1,9 @@
+|Gated_D_Latch
+Q <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+Clk => inst1.IN1
+Clk => inst.IN0
+~Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

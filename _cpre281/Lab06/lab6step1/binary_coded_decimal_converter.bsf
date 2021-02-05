@@ -1,0 +1,120 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 200 240)
+	(text "binary_coded_decimal_converter" (rect 5 0 167 12)(font "Arial" ))
+	(text "inst" (rect 8 160 25 172)(font "Arial" ))
+	(port
+		(pt 0 96)
+		(input)
+		(text "C0" (rect 0 0 14 12)(font "Arial" ))
+		(text "C0" (rect 21 91 35 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "S3" (rect 0 0 12 12)(font "Arial" ))
+		(text "S3" (rect 21 75 33 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "S2" (rect 0 0 12 12)(font "Arial" ))
+		(text "S2" (rect 21 59 33 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "S1" (rect 0 0 12 12)(font "Arial" ))
+		(text "S1" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "S0" (rect 0 0 12 12)(font "Arial" ))
+		(text "S0" (rect 21 27 33 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "N2X3" (rect 0 0 25 12)(font "Arial" ))
+		(text "N2X3" (rect 94 27 119 39)(font "Arial" ))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(port
+		(pt 136 48)
+		(output)
+		(text "N2X2" (rect 0 0 25 12)(font "Arial" ))
+		(text "N2X2" (rect 94 43 119 55)(font "Arial" ))
+		(line (pt 136 48)(pt 120 48))
+	)
+	(port
+		(pt 136 64)
+		(output)
+		(text "N2X1" (rect 0 0 25 12)(font "Arial" ))
+		(text "N2X1" (rect 94 59 119 71)(font "Arial" ))
+		(line (pt 136 64)(pt 120 64))
+	)
+	(port
+		(pt 136 80)
+		(output)
+		(text "N2X0" (rect 0 0 25 12)(font "Arial" ))
+		(text "N2X0" (rect 94 75 119 87)(font "Arial" ))
+		(line (pt 136 80)(pt 120 80))
+	)
+	(port
+		(pt 136 96)
+		(output)
+		(text "N1X3" (rect 0 0 25 12)(font "Arial" ))
+		(text "N1X3" (rect 94 91 119 103)(font "Arial" ))
+		(line (pt 136 96)(pt 120 96))
+	)
+	(port
+		(pt 136 112)
+		(output)
+		(text "N1X2" (rect 0 0 25 12)(font "Arial" ))
+		(text "N1X2" (rect 94 107 119 119)(font "Arial" ))
+		(line (pt 136 112)(pt 120 112))
+	)
+	(port
+		(pt 136 128)
+		(output)
+		(text "N1X1" (rect 0 0 25 12)(font "Arial" ))
+		(text "N1X1" (rect 94 123 119 135)(font "Arial" ))
+		(line (pt 136 128)(pt 120 128))
+	)
+	(port
+		(pt 136 144)
+		(output)
+		(text "N1X0" (rect 0 0 25 12)(font "Arial" ))
+		(text "N1X0" (rect 94 139 119 151)(font "Arial" ))
+		(line (pt 136 144)(pt 120 144))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 160))
+	)
+)

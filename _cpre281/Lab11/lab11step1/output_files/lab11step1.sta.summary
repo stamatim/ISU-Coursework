@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : -2.406
+TNS   : -7.157
+
+Type  : Slow 1200mV 85C Model Setup 'Clk'
+Slack : -2.300
+TNS   : -6.896
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : -1.949
+TNS   : -3.807
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:inst|inst7'
+Slack : -0.256
+TNS   : -0.482
+
+Type  : Slow 1200mV 85C Model Hold 'Clk'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:inst|inst7'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk'
+Slack : -3.000
+TNS   : -15.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : -1.285
+TNS   : -8.995
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:inst|inst7'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : -2.135
+TNS   : -5.679
+
+Type  : Slow 1200mV 0C Model Setup 'Clk'
+Slack : -2.016
+TNS   : -5.395
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : -1.704
+TNS   : -2.904
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:inst|inst7'
+Slack : -0.136
+TNS   : -0.233
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:inst|inst7'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clk'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk'
+Slack : -3.000
+TNS   : -15.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : -1.285
+TNS   : -8.995
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst|inst7'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : -0.672
+TNS   : -0.683
+
+Type  : Fast 1200mV 0C Model Setup 'Clk'
+Slack : -0.662
+TNS   : -0.662
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : -0.525
+TNS   : -0.525
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:inst|inst7'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clk'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:inst|inst7'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk'
+Slack : -3.000
+TNS   : -13.620
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst|clock_divider_1024:inst|inst10'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst|clock_divider_1024:inst8|inst10'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst|inst7'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

@@ -1,0 +1,98 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+# Date created = 12:54:42  September 25, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		lab5step1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY lab5step1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:54:42  SEPTEMBER 25, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name BDF_FILE lab5step1.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AA22 -to x31
+set_location_assignment PIN_AA23 -to x21
+set_location_assignment PIN_AA24 -to x11
+set_location_assignment PIN_AB23 -to x01
+set_location_assignment PIN_AB24 -to x32
+set_location_assignment PIN_AC24 -to x22
+set_location_assignment PIN_AB25 -to x12
+set_location_assignment PIN_AC25 -to x02
+set_location_assignment PIN_AB26 -to x33
+set_location_assignment PIN_AD26 -to x23
+set_location_assignment PIN_AC26 -to x13
+set_location_assignment PIN_AB27 -to x03
+set_location_assignment PIN_AD27 -to x34
+set_location_assignment PIN_AC27 -to x24
+set_location_assignment PIN_AC28 -to x14
+set_location_assignment PIN_AB28 -to x04
+set_location_assignment PIN_V21 -to a1
+set_location_assignment PIN_AA25 -to a2
+set_location_assignment PIN_M24 -to a3
+set_location_assignment PIN_G18 -to a4
+set_location_assignment PIN_U21 -to b1
+set_location_assignment PIN_AB20 -to c1
+set_location_assignment PIN_AA21 -to d1
+set_location_assignment PIN_AD24 -to e1
+set_location_assignment PIN_AF23 -to f1
+set_location_assignment PIN_Y19 -to g1
+set_location_assignment PIN_AA26 -to b2
+set_location_assignment PIN_Y25 -to c2
+set_location_assignment PIN_W26 -to d2
+set_location_assignment PIN_Y26 -to e2
+set_location_assignment PIN_W27 -to f2
+set_location_assignment PIN_W28 -to g2
+set_location_assignment PIN_Y22 -to b3
+set_location_assignment PIN_W21 -to c3
+set_location_assignment PIN_W22 -to d3
+set_location_assignment PIN_W25 -to e3
+set_location_assignment PIN_U23 -to f3
+set_location_assignment PIN_U24 -to g3
+set_location_assignment PIN_F22 -to b4
+set_location_assignment PIN_E17 -to c4
+set_location_assignment PIN_L26 -to d4
+set_location_assignment PIN_L25 -to e4
+set_location_assignment PIN_J22 -to f4
+set_location_assignment PIN_H22 -to g4
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

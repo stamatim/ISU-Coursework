@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "N3A",
+					"strict" : false
+				},
+				{
+					"name" : "N3B",
+					"strict" : false
+				},
+				{
+					"name" : "N3C",
+					"strict" : false
+				},
+				{
+					"name" : "N3D",
+					"strict" : false
+				},
+				{
+					"name" : "N3E",
+					"strict" : false
+				},
+				{
+					"name" : "N3F",
+					"strict" : false
+				},
+				{
+					"name" : "N3G",
+					"strict" : false
+				},
+				{
+					"name" : "N4A",
+					"strict" : false
+				},
+				{
+					"name" : "N4B",
+					"strict" : false
+				},
+				{
+					"name" : "N4C",
+					"strict" : false
+				},
+				{
+					"name" : "N4D",
+					"strict" : false
+				},
+				{
+					"name" : "N4E",
+					"strict" : false
+				},
+				{
+					"name" : "N4F",
+					"strict" : false
+				},
+				{
+					"name" : "N4G",
+					"strict" : false
+				},
+				{
+					"name" : "N2A",
+					"strict" : false
+				},
+				{
+					"name" : "N2C",
+					"strict" : false
+				},
+				{
+					"name" : "N2D",
+					"strict" : false
+				},
+				{
+					"name" : "N2E",
+					"strict" : false
+				},
+				{
+					"name" : "N2F",
+					"strict" : false
+				},
+				{
+					"name" : "N2G",
+					"strict" : false
+				},
+				{
+					"name" : "N1A",
+					"strict" : false
+				},
+				{
+					"name" : "N1B",
+					"strict" : false
+				},
+				{
+					"name" : "N1C",
+					"strict" : false
+				},
+				{
+					"name" : "N1D",
+					"strict" : false
+				},
+				{
+					"name" : "N1E",
+					"strict" : false
+				},
+				{
+					"name" : "N1F",
+					"strict" : false
+				},
+				{
+					"name" : "N1G",
+					"strict" : false
+				},
+				{
+					"name" : "N3X0",
+					"strict" : false
+				},
+				{
+					"name" : "N3X1",
+					"strict" : false
+				},
+				{
+					"name" : "N3X2",
+					"strict" : false
+				},
+				{
+					"name" : "N3X3",
+					"strict" : false
+				},
+				{
+					"name" : "N4X0",
+					"strict" : false
+				},
+				{
+					"name" : "N4X1",
+					"strict" : false
+				},
+				{
+					"name" : "N4X2",
+					"strict" : false
+				},
+				{
+					"name" : "N4X3",
+					"strict" : false
+				},
+				{
+					"name" : "Ci",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

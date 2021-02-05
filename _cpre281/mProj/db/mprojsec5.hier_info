@@ -1,0 +1,14 @@
+|mprojsec5
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+W => B.IN0
+W => B.IN0
+X => B.IN0
+X => B.IN1
+Y => B.IN1
+Y => B.IN1
+Y => B.IN1
+Z => B.IN1
+Z => B.IN1
+Z => B.IN1
+
+
